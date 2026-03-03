@@ -34,6 +34,13 @@ class StudentManager:
         except ValueError as e:
             print(e)
 
+    def delete_student(self, student_id):
+        if student_id in self.students:
+            del self.students[student_id]
+            print("Student deleted successfully!")
+        else:
+            print("Student not found!")
+
     def search_student(self, student_id):
         student = self.students.get(student_id)
         if student:
