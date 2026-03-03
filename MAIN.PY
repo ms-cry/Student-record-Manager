@@ -10,6 +10,7 @@ while True:
     print("3. Update Marks")
     print("4. Save & Exit")
     print("5. Display All Students")
+    print("6. Delete Student")
 
     choice = input("Enter choice: ")
 
@@ -43,6 +44,8 @@ while True:
 
     elif choice == "5":
         manager.display()
-
+    elif choice == "6":
+        sid = input("Enter ID to delete: ")
+        manager.delete_student(sid)
     else:
         print("Invalid choice!")
