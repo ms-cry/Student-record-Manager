@@ -98,7 +98,6 @@ This project demonstrates practical application of:
 
 ## 🔥 Future Improvements
 
-- Delete Student feature
 - Sorting by marks
 - Grade calculation system
 - GUI version (Tkinter / Web App)
